@@ -65,6 +65,6 @@ class Dog
 
   # This method is NOT currently covered by a test
   def age_in_dog_years
-    45
+    405
   end
 end
