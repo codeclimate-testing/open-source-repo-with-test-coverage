@@ -19,6 +19,10 @@ class Complex
     # Strip whitespaces
     text.strip! if opts[:strip_whitespaces]
 
+    
+    
+    
+    
     text
   end
 
