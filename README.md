@@ -7,3 +7,5 @@ Run the following to run the tests and report coverage:
 ```shell
 CODECLIMATE_REPO_TOKEN=TOKENGOESHERE bundle exec rspec
 ```
+
+# FIXME
