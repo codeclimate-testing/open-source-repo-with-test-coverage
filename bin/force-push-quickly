@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+branch = ENV.fetch('MY_BRANCH')
+10.times do
+  src = File.read("./lib/dog.rb")
+  src = "# TODO: improve this class\n" + src
+  File.open("./lib/dog.rb", "w") { |f| f.write src }
+  system %{git add lib/dog.rb}
+  system %{git commit --amend --no-edit}
+  system %{git push origin #{branch} --force}
+end
+
