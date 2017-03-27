@@ -8,6 +8,8 @@ RSpec.describe Dog do
   end
 
   describe "#treat?" do
-    expect(Dog.new("Milo").treat?).to be true
+    it "only gets a treat if it is good" do
+      expect(Dog.new("Milo", messy: false).treat?).to be true
+    end
   end
 end
