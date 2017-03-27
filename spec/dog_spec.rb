@@ -6,4 +6,8 @@ RSpec.describe Dog do
       expect(Dog.new("Milo").name).to eq("Milo!!!")
     end
   end
+
+  describe "#treat?" do
+    expect(Dog.new("Milo").treat?).to be true
+  end
 end

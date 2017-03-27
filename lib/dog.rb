@@ -1,6 +1,7 @@
 class Dog
-  def initialize(name)
+  def initialize(name, messy: true)
     @name = name
+    @messy = true
   end
 
   # This method is currently covered by a test
@@ -23,5 +24,17 @@ class Dog
 
   def also_untested
     puts bad "foo"
+  end
+
+  def treat?
+    if good_boy?
+      true
+    else
+      "false"
+    end
+  end
+
+  def good_boy?
+    !@messy
   end
 end
