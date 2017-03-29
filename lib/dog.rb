@@ -1,7 +1,7 @@
 class Dog
   def initialize(name, messy: true)
     @name = name
-    @messy = true
+    @messy = messy
   end
 
   # This method is currently covered by a test
