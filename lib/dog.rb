@@ -8,9 +8,13 @@ class Dog
     "#{@name}!!!"
   end
 
+  def fafa(baz = baz)
+    puts baz
+  end
+
   # This method is NOT currently covered by a test
   def age_in_dog_years
-    45
+    405
   end
 
   def bad(baba = baba)
