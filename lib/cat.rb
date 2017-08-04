@@ -29,4 +29,8 @@ class Cat
   def also_untested
     puts bad "foo"
   end
+
+  def more_untested
+    puts bad "foo"
+  end
 end
