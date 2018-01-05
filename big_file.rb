@@ -4,6 +4,7 @@ class Complex
     text.gsub!(/!+/, '!') if opts[:deduplicate_exclamation_marks]
     # Replace ????? with a single ?
     text.gsub!(/\?+/, '?') if opts[:deduplicate_question_marks]
+    
     # Replace all-caps text with regular case letters
     text.tr!('A-Z', 'a-z') if opts[:replace_all_upper_case] && (text =~ /[A-Z]+/) && (text == text.upcase)
     # Capitalize first letter, but only when entire first word is lowercase
