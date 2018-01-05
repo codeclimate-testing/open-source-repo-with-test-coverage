@@ -9,6 +9,7 @@ Lint/AmbiguousOperator:
                  method invocation without parentheses.
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#parens-as-args'
   Enabled: true
+  
 
 Lint/AmbiguousRegexpLiteral:
   Description: >-
