@@ -22,6 +22,20 @@ class Cat
     puts baba
   end
 
+  def bad(baba = baba)
+    puts baba
+  end
+
+  def bad(baba = baba)
+    puts baba
+  end
+
+  def also_not_tested
+    puts "a thing"
+    puts "sup"
+    return true
+  end
+
   def untested
     puts bad "foo"
   end
