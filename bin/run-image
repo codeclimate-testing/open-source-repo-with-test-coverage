@@ -1,0 +1,8 @@
+#!/bin/sh
+
+exec docker run \
+	-it --rm \
+	--volume "$PWD:/project" \
+	--env CC_TEST_REPORTER_ID \
+	--env "CI=true" \
+	codeclimate/cc-test-coverage "$@"

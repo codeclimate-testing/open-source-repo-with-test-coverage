@@ -2,10 +2,17 @@
 
 This is a ruby codebase which has some tests, but not perfect coverage.
 
-Run the following to run the tests and report coverage:
+Run the following to setup a docker container and produce test coverage:
 
 ```shell
-CODECLIMATE_REPO_TOKEN=TOKENGOESHERE bundle exec rspec
+make image
+make test
+```
+
+And run this to report those coverage results to `cce-airbnb-unstable`.
+
+```shell
+CC_TEST_REPORTER_ID=IDGOESHERE make upload_coverage
 ```
 
 # FIXME
