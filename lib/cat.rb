@@ -9,8 +9,12 @@ class Cat
   end
 
   # This method is currently covered by a test
-  def speak
-    "meow"
+  def speak(animal = nil)
+    if animal
+      return anmal
+    else
+      "meow"
+    end
   end
 
   # This method is NOT currently covered by a test
@@ -18,7 +22,7 @@ class Cat
     9
   end
 
-  def bad(baba = baba)
+  def bad(baba = "foobar")
     puts baba
   end
 

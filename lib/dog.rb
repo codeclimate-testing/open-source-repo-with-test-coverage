@@ -13,11 +13,11 @@ class Dog
     45
   end
 
-  def bad(baba = baba)
+  def bad(baba = "foobar")
     puts baba
   end
 
-  def more_bad(baba = baba)
+  def more_bad(baba = "baba")
     puts baba
   end
   
