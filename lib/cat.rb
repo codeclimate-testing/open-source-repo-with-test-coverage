@@ -33,4 +33,18 @@ class Cat
   def also_untested
     puts bad "foo"
   end
+
+  def with_branches(param)
+    if param
+      puts "foo"
+    else
+      puts "bar"
+    end
+  end
+
+  # :nocov:
+  def skip_this_method
+    never_reached
+  end
+  # :nocov:
 end

@@ -28,4 +28,27 @@ class Dog
   def also_untested
     puts bad "foo"
   end
+
+  def with_branches
+    if 1
+      puts "foo"
+    # :nocov:
+    else
+      puts "bar"
+    # :nocov: 
+    end
+  end
+
+  # :nocov:
+  def skip_this_method
+    never_reached
+  end
+  # :nocov:
+
+
+  # :nocov:
+  def skip_this_other_method
+    never_reached
+  end
+  # :nocov:
 end
